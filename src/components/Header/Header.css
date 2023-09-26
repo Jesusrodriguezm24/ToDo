@@ -1,0 +1,92 @@
+.header_container{
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 3rem;
+
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.header_title,
+.bx-log-in{
+    color: aliceblue;
+    font-size: 2rem;
+}
+.btn_login{
+    background-color: transparent;
+    border: none;
+}
+.bx-log-in:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.create_container {
+    position: relative;
+    position: fixed;
+    right: 2rem;
+    bottom: 3rem;
+  
+    font-weight: bold;
+  
+    border-radius: 10px;
+    background-color: black;
+   
+  }
+  
+  .create_container::before,
+  .create_container::after {
+    content: "";
+    position: absolute;
+    width: 9.83rem;
+    height: 3.15rem;
+  
+    padding: 1rem;
+    
+  
+    right: 0rem;
+    bottom: 0rem;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0;
+    animation: waves 2.5s infinite;
+  }
+  .create_container::before {
+    animation-delay: 0.8s;
+  }
+  .create_container::after {
+    animation-delay: 1.7s;
+  }
+  .btn_createTask {
+    display: flex;
+    gap: 0.8rem;
+    position: relative;
+    z-index: 2;
+  
+    padding: 1rem;
+    color: aliceblue;
+    font-size: 1rem;
+    background-color: transparent;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .btn_createTask:hover {
+    animation: none;
+  }
+  
+  @keyframes waves {
+    0% {
+      transform: scale(1);
+    }
+    15% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+  }

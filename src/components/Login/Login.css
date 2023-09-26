@@ -1,0 +1,28 @@
+.login_container{
+    position: relative;
+
+    width: 25%;
+    min-width: 18rem;
+    max-width: 42rem;
+ 
+    min-height: 12rem;
+    padding: 1rem 3rem;
+
+    background: #FFFFFF;
+    z-index: 10;
+}
+.login_title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+
+}
+.input_login{
+    width: 100%;
+}
