@@ -14,6 +14,7 @@ function App() {
   const [isVisibleModal, setIsVisibleModal] = useState(false);
   const [onCreate, setOnCreate] = useState(false);
   const [isLogin, setIsLogin] = useState(false);
+  const [user, setUser] = useState(null);
 
   const loadTasks = async () => {
     const tasksInfo = await getAllTasks();
@@ -31,7 +32,7 @@ function App() {
     setIsVisibleModal(true);  
   }
 
-  const handleOnLogin = () => {
+  const handleOnLogin = (userLogin) => {
     setIsLogin(true);
     setIsVisibleModal(true);
   }
